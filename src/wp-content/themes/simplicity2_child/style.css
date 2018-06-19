@@ -1,0 +1,245 @@
+/*
+Template:simplicity2
+Theme Name:simplicity2_child
+Description:simplicity2 の子テーマです
+Author:EGG SYSTEM
+Version:1.0
+*/
+
+@import url(“../simplicity2/style.css”);
+
+/************************************
+** カスタマイズ
+************************************/
+/* サイトタイトル非表示 */
+#site-title {
+	display:none;
+}
+#site-description {
+    margin: 10px 0;
+}
+
+/* グローバルナビ */
+#navi ul li a {
+	padding: 15px 20px 15px 40px!important;
+}
+#navi ul li a:after {
+	background:none!important;
+}
+#navi ul li a:before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_hoshi02.svg")!important;
+	background:none!important;
+	top:18px!important;
+	left:14px!important;
+}
+
+/* 右カラムコンテンツ見出し */
+#sidebar h3{
+text-align:center;
+line-height: 24px;
+font-size: 18px;
+color: black;
+/* background-color: #66CDAA; */
+border-radius: 15px;
+padding: 4px 10px 2px 20px;
+position:relative;
+background:url(http://support-world.com/wp-content/uploads/2017/05/bg_mtitle_stripe.jpg) repeat;
+}
+
+#sidebar .widget_calendar h3::before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_hata.svg")!important;
+	position:absolute;
+	top:4px;
+	left:22px;
+}
+
+#sidebar .widget_sow-editor h3::before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_serifu.svg")!important;
+	position:absolute;
+	top:4px;
+	left:30px;
+}
+
+#sidebar .popular-posts h3::before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_okan.svg")!important;
+	position:absolute;
+	top:4px;
+	left:22px;
+}
+#sidebar .widget_new_entries h3::before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_enpitsu.svg")!important;
+	position:absolute;
+	top:4px;
+	left:50px;
+}
+#sidebar .widget_text h3::before {
+	content:url("http://support-world.com/wp-content/uploads/2017/05/icon_hoshi.svg")!important;
+	position:absolute;
+	top:4px;
+	left:40px;
+}
+
+#sidebar {
+ width: 230px;/*←幅を狭くする*/
+}
+
+/* トップページのコンテンツに表示するカスタムフィールド（開始時刻・場所のエリア） */
+.entry-snippet{
+/* text-align:center; */
+line-height: 24px;
+font-size: 11px !important;
+color: #fff!important;
+background-color: #444!important; /* #1e3f34 濃い緑*/
+border-radius: 4px 4px 0 0!important;
+padding: 2px 10px;
+line-height: 170% !important;
+margin-left: -5px;
+margin-right: -5px;
+margin-bottom: -4px;
+}
+
+.entry-snippet a{
+	color:#fff000!important;
+	font-size: 11px !important;
+}
+
+/* 検索画面のプルダウン */
+.custom_pulldown_date select { /* 日付検索 */
+    cursor: pointer;
+/*    -webkit-appearance: none; */
+/*    -moz-appearance: none; */
+/*    appearance: none; */
+    width:70px;
+    padding: 0.5em 0.5em;
+/*    color: #66CDAA; */
+    border: 2px solid #c0c0c0;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.custom_pulldown_cat select { /* 地域検索 */
+    cursor: pointer;
+/*    -webkit-appearance: none; */
+/*    -moz-appearance: none; */
+/*    appearance: none; */
+    width:300px;
+    padding: 0.5em 1em;
+    border: 2px solid #c0c0c0;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.free_search input{ /* フリー検索 */
+    border: 2px solid #c0c0c0;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.search_button input{ /* 検索ボタン */
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: #808080;
+    color: #fff;
+    border-style: none;
+}
+
+/* タイルの本文箇所の縦幅を固定値で揃える */
+.entry-card-content {
+/*   height:120px !important;*/
+   height:20px !important;
+}
+
+/* タイルのタイトル部分 */
+.entry-card-content h2{
+/*   height:50px !important; */
+/*   font-size: 50% !important; */
+   height:20px !important;
+   font-size: 11px !important;
+}
+
+.entry h2 a:hover {
+	color:#01a8b7!important;
+}
+
+/* タイルのタイトル */
+.entry h2 a {
+   font-size: 11px !important;
+}
+
+/* 見出し（H1・3・4) */
+.article h1 {
+	background:url(http://support-world.com/wp-content/uploads/2017/05/line_stripe.gif)repeat-x bottom;
+	padding-bottom: 15px;
+}
+
+.article h3{
+  border-bottom:5px solid #7bcfd0;
+}
+
+.article  h4{
+	background:#7bcfd0;
+	padding:10px 20px;
+	color:#000;
+	border-radius: 5px;
+	border:none;
+}
+
+
+#h-top #mobile-menu a {
+	box-shadow: 5px 5px 7px -4px rgba(160, 160, 160, 0.86);
+}
+
+/* ヘッダーの文字色 */
+#navi a {
+ color: #fff!important;
+}
+
+/* フッターの文字色 */
+#footer a {
+ color: black !important;
+}
+
+/* フッターのクレジット（Copyright） */
+.credit {
+ color: black !important;
+}
+
+/* タイル表示の高さを固定にする */
+#main .entry.entry-tile{
+  height: 173px;
+}
+
+/* スマホでも3列表示にする */
+@media screen and (max-width: 768px){
+  #main .entry.entry-tile{
+    width: 30% !important;
+    margin: 0 1% 2.5% !important;
+    float: left !important;
+    overflow: hidden !important;
+    height: 155px !important;
+  }
+  .entry-snippet{
+    font-size: 10px !important;
+  }
+  /* メニューの幅 */
+  #navi ul li a {
+  	padding:5px 20px 6px 40px!important;
+  }
+}
+
+/*スマホ用のトップへ戻るボタン  */
+#page-top a{
+  padding:10px !important;
+}
+
+@media screen and (max-width: 768px){
+#h-top #site-description{
+  font-size: 10px !important;
+}
+#h-top {
+  min-height: 40px !important;
+  color: #FFFFFF !important;
+}
+}
